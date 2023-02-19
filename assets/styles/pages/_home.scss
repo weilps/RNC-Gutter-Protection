@@ -1,0 +1,102 @@
+.about {
+  min-height: 400px;
+  position: relative;
+  @include center-unique-child;
+  .section-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 100px;
+    grid-template-areas:
+      "l r"
+      "rm rm";
+    gap: 25px;
+  }
+  .left {
+    grid-area: l;
+    background: url("./../img/roof-std.jpg") center/cover;
+  }
+  .right {
+    grid-area: r;
+    text-align: justify;
+    p {
+      padding: 25px 0;
+    }
+  }
+  .bt {
+    grid-area: rm;
+    padding-top: 50px;
+  }
+}
+
+.services {
+  min-height: 600px;
+  position: relative;
+  h2 {
+    padding-bottom: 50px;
+  }
+  .bi {
+    gap: 25px;
+  }
+  .left1 {
+    background: url("./../img/roof-std.jpg") center/cover;
+    @include center-unique-child();
+    p {
+      text-align: justify;
+      color: $color3;
+      padding: 25px;
+      background: rgba(27, 27, 27, 0.334);
+      backdrop-filter: blur(2px);
+    }
+  }
+
+  .right1 {
+    .grid-content {
+      display: flex;
+      padding: 5px 0;
+      align-items: center;
+      .icon-gutter {
+        background: url("./../img/gutter-protection-sketch-1.png") center/cover;
+        width: 40px;
+        height: 40px;
+      }
+      a {
+        padding-left: 15px;
+        color: $color1;
+      }
+    }
+  }
+
+  .bt {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+.contact {
+  color: $color3;
+  h2 {
+    padding-bottom: 50px;
+  }
+  p {
+    color: $color3;
+    padding: 25px;
+    font-weight: 600;
+    background: rgba(37, 37, 37, 0.353);
+    border-radius: 50px;
+    backdrop-filter: blur(2px);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .bt {
+    margin: 50px auto 0;
+    padding: 10px 0;
+    border-radius: 20px;
+    background: $color1;
+    width: 350px;
+    a,
+    i {
+      font-weight: 800;
+      color: $color2;
+    }
+  }
+}

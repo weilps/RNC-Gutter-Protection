@@ -1,0 +1,94 @@
+.products-t {
+  p {
+    line-height: 25px;
+    text-align: justify;
+  }
+
+  .card-container {
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .card-overview {
+      max-width: 300px;
+      margin: 30px 15px;
+      line-height: 25px;
+      h6 {
+        font-size: 1rem;
+        padding-bottom: 10px;
+      }
+    }
+
+    .card-overview::part(body) {
+      height: 200px;
+    }
+
+    .card-overview [slot="footer"] {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        color: $color3;
+      }
+    }
+  }
+}
+
+.products-l {
+  background: $color4;
+}
+.product-container {
+  display: flex;
+  //   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color3;
+  padding: 50px;
+  border-radius: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  min-height: 500px;
+
+  .product-image {
+    background: url("./../img/roof-std.jpg") center/cover;
+    border-radius: 25px;
+    height: 100%;
+    min-height: 450px;
+    width: 50%;
+    // flex: 1;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    // img {
+    //   //   height: 100%;
+    //   display: block;
+    //   margin: 0 auto;
+    //   height: 100%;
+    //   width: auto;
+    // }
+  }
+
+  .product-details {
+    // flex: 2;
+    max-width: 50%;
+    width: 50%;
+    .product-title {
+      margin-bottom: 50px;
+      text-align: left;
+    }
+
+    .product-description {
+      margin-bottom: 50px;
+      line-height: 25px;
+      text-align: justify;
+    }
+
+    .product-call-button {
+      a {
+        color: $color3;
+      }
+    }
+  }
+}

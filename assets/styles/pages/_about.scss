@@ -1,0 +1,139 @@
+.history {
+  width: 100%;
+  @include center-unique-child;
+  padding: 100px 0;
+  .section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+      text-align: left;
+      width: 30%;
+      @media screen and (max-width: 925px) {
+        margin: 0 auto;
+        width: 60%;
+        // font-size: 2rem;
+        padding-bottom: 50px;
+      }
+    }
+    p {
+      width: 60%;
+      text-align: justify;
+      @media screen and (max-width: 925px) {
+        margin: 0 auto;
+        min-width: 400px;
+      }
+    }
+    @media screen and (max-width: 1240px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 925px) {
+      display: block;
+    }
+  }
+}
+#bg3 {
+  background: url(./../img/roof-std.jpg) center/cover fixed;
+  height: 400px;
+}
+
+#bg4 {
+  background: url(./../img/roof-std.jpg) center/cover fixed;
+  height: 400px;
+  z-index: -1;
+}
+
+.banner {
+  .section-container {
+    flex-wrap: wrap;
+    gap: 50px;
+    .card-overview {
+      max-width: 200px;
+      &::part(image) {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        height: 90%;
+      }
+      &::part(body) {
+        height: 150px;
+      }
+    }
+
+    .card-overview [slot="footer"] {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.values {
+  overflow: hidden;
+  // background: $color1;
+  position: relative;
+  .section-container {
+    margin: 100px;
+    z-index: 3;
+    display: block;
+    .value {
+      display: flex;
+      justify-content: space-between;
+      padding: 50px;
+      .left,
+      .right2 {
+        @include center-unique-child;
+        width: 30%;
+        h4 {
+          color: $color1;
+          text-transform: uppercase;
+          padding: 50px;
+          font-size: 2.5rem;
+          font-weight: 600;
+          letter-spacing: 2px;
+        }
+        #rat-07 {
+          background: url(./../img/roof-std.jpg) center/cover;
+          height: 300px;
+          width: 250px;
+        }
+        #rat-06 {
+          background: url(./../img/roof-std.jpg) center/cover;
+          height: 300px;
+          width: 250px;
+        }
+      }
+      .right,
+      .left2 {
+        @include center-unique-child;
+        width: 50%;
+        .container {
+          position: relative;
+          &::after {
+            position: absolute;
+            content: "";
+            background: $color1;
+            height: 92%;
+            width: 1px;
+            top: 20px;
+            left: 12%;
+          }
+        }
+      }
+      .value-desc {
+        display: flex;
+        padding: 15px 0;
+        justify-content: space-between;
+        i {
+          width: 10%;
+          font-size: 2rem;
+          color: $color1;
+        }
+        p {
+          width: 80%;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

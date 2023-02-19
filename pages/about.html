@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Conzatti Rope Access</title>
+    <title>RNC Gutter Protection - FREE inspection</title>
     <meta
       name="description"
-      content="Conzatti Rope Access provides professional and reliable Melbourne and Victoria based rope access services for a wide range of industrial and commercial projects. Contact us for more information."
+      content="Protect your roof with the experts at RNC Gutter Protection. Our experienced technicians offer top-quality gutter mesh installation, roof cleaning, roof painting, solar panel cleaning, and more. Get a free inspection and quote today."
     />
 
-    <meta property="og:title" content="Conzatti Rope Access" />
-    <meta property="og:type" content="Industrial Rope Access company " />
-    <meta property="og:url" content="https://conzattiropeaccess.com" />
+    <meta
+      property="og:title"
+      content="RNC Gutter Protection - FREE inspection"
+    />
+    <meta property="og:type" content="Gutter Protection Installation company" />
+    <meta property="og:url" content="https://rncgutterprotection.com.au" />
     <meta
       name="og:description"
-      content="Conzatti Rope Access provides professional and reliable Melbourne and Victoria based rope access services for a wide range of industrial and commercial projects. Contact us for more information."
+      content="Protect your roof with the experts at RNC Gutter Protection. Our experienced technicians offer top-quality gutter mesh installation, roof cleaning, roof painting, solar panel cleaning, and more. Get a free inspection and quote today."
     />
-    <meta property="og:image" content="./assets/img/logo.png" />
+    <meta
+      property="og:image"
+      content="./assets/img/logo/rnc-low-resolution-color-logo.png"
+    />
 
     <!--Font Awesome Library-->
     <link
@@ -38,32 +44,47 @@
     <!-- Styles perso -->
     <link rel="stylesheet" href="./../assets/styles/index.css" />
 
-    <link rel="tab icon" href="./../assets/img/logo.png" />
+    <link
+      rel="tab icon"
+      href="./assets/img/logo/rnc-low-resolution-logo-black-on-transparent-background.png"
+    />
   </head>
   <body>
     <header>
+      <div class="section-bg bghead"></div>
       <nav>
         <div class="nav-container">
           <div class="logo">
-            <img src="./../assets/img/logo.png" alt="logo-cra" />
+            <img
+              src="./../assets/img/logo/rnc-low-resolution-color-logo.png"
+              alt="logo-rnc"
+            />
           </div>
           <div class="menu">
             <ul>
               <li><a href="./../index.html">Home</a></li>
-              <li id="oui"><a href="#">About</a></li>
-              <li>
-                <a href="./services.html" id>Services</a>
+              <li id="oui">
+                <a href="#" id="about">About</a>
               </li>
-              <li><a href="./contact.html" id>Contact</a></li>
+              <li>
+                <a href="./services.html" id="services">Services</a>
+              </li>
+              <li>
+                <a href="./products.html" id="products">Products</a>
+              </li>
+              <li>
+                <a href="./contact.html" id="contact">Contact</a>
+              </li>
             </ul>
+          </div>
+
+          <div class="call">
+            <a href="tel:0431076313">
+              <i class="fa-solid fa-mobile-screen-button"></i> 0431 076 313
+            </a>
           </div>
           <div class="burger-bun">
             <i class="fa-solid fa-bars"></i>
-          </div>
-          <div class="socials" id="soc-header">
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
       </nav>
@@ -86,45 +107,74 @@
       </div>
     </section>
     <div class="background" id="bg3"></div>
-    <section class="team">
-      <div class="section-container">
-        <div class="left">
-          <div class="container">
-            <div class="team-member" id="loic">
-              <div class="profile-pic">
-                <img src="./../assets/img/macron.jpg" alt="pp-loic" />
-                <span>Loic, Director</span>
-              </div>
-            </div>
-            <div class="team-member" id="amaury">
-              <div class="profile-pic">
-                <img src="./../assets/img/momo.jpg" alt="pp-amaury" />
-                <span>Amaury, Project Manager</span>
-              </div>
-            </div>
-            <div class="team-member" id="technicians">
-              <div class="profile-pic">
-                <img src="./../assets/img/brothers.jpg" alt="pp-technicians" />
-                <span>Our technicians</span>
-              </div>
-            </div>
+    <section class="banner">
+      <div class="section-bg"></div>
+      <div class="section-container bi">
+        <sl-card class="card-overview">
+          <img
+            slot="image"
+            src="./../assets/img/cert/topQuality.png"
+            alt="Highest quality products"
+          />
+          <p>Highest quality products</p>
+          <div slot="footer">
+            <sl-rating label="Rating" readonly value="5"></sl-rating>
           </div>
-        </div>
-        <div class="right">
-          <div class="container">
-            <h3>Our team</h3>
-            <div class="team-desc" id="none">
-              <p>Hover our team to get more info !</p>
-            </div>
+        </sl-card>
+        <sl-card class="card-overview">
+          <img
+            slot="image"
+            src="./../assets/img/cert/20yearW.png"
+            alt="20 year material and workmanship warranty"
+          />
+          <p>20 year material and workmanship warranty</p>
+          <div slot="footer">
+            <sl-rating label="Rating" readonly value="5"></sl-rating>
           </div>
-        </div>
+        </sl-card>
+        <sl-card class="card-overview">
+          <img
+            slot="image"
+            src="./../assets/img/cert/bestPrice.png"
+            alt="Best prices"
+          />
+          <p>Best prices</p>
+          <div slot="footer">
+            <sl-rating label="Rating" readonly value="5"></sl-rating>
+          </div>
+        </sl-card>
+        <sl-card class="card-overview">
+          <img
+            slot="image"
+            src="./../assets/img/cert/freeGutter.png"
+            alt="Free gutter cleaning with all mesh installations"
+          />
+          <p>Free gutter cleaning with all mesh installations</p>
+          <div slot="footer">
+            <sl-rating label="Rating" readonly value="5"></sl-rating>
+          </div>
+        </sl-card>
       </div>
     </section>
-    <div class="background" id="bg4"></div>
-    <section class="values">
-      <div class="bg" id="bg-values"></div>
+
+    <section class="inspection">
+      <div class="section-bg bgins" id="bginsa1"></div>
       <div class="section-container">
-        <h3>Our values, Environmental & Safety focus</h3>
+        <a href="./pages/contact.html" class="bt-inspection"
+          >Get your FREE inspection and FREE quote today!<i
+            class="fa-solid fa-arrow-right"
+          ></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="values">
+      <div class="section-bg bglight"></div>
+      <div class="section-container">
+        <h3>
+          <i class="fa-solid fa-hand-holding-droplet"></i>Sustainability &
+          Safety<i class="fa-solid fa-shield-heart"></i>
+        </h3>
         <div class="value">
           <div class="left">
             <div class="container">
@@ -137,22 +187,25 @@
               <div class="value-desc">
                 <i class="fa-solid fa-earth-oceania"></i>
                 <p>
-                  We take pride in our commitment to reducing our carbon
-                  footprint and aim to achieve a zero carbon print by 2025.
+                  We use eco-friendly products whenever possible to minimize our
+                  impact on the environment.
                 </p>
               </div>
               <div class="value-desc">
                 <i class="fa-solid fa-earth-oceania"></i>
                 <p>
-                  Our team is dedicated to using eco-friendly practices on all
-                  job sites and minimizing waste wherever possible.
+                  Our gutter mesh protection installation helps to prevent
+                  debris from entering the gutters and ultimately reducing the
+                  amount of waste and pollution that would otherwise end up in
+                  our waterways.
                 </p>
               </div>
               <div class="value-desc">
                 <i class="fa-solid fa-earth-oceania"></i>
                 <p>
-                  We believe that every small step towards sustainability makes
-                  a big impact on the environment.
+                  We are committed to sustainable practices, and continuously
+                  evaluate and improve our processes to minimize our
+                  environmental footprint.
                 </p>
               </div>
             </div>
@@ -164,31 +217,23 @@
               <div class="value-desc">
                 <i class="fa-solid fa-leaf"></i>
                 <p>
-                  Safety is always our top priority and we have a record of zero
-                  accidents on our job sites.
+                  We have a team of highly trained and experienced professionals
+                  who prioritize safety at all times.
                 </p>
               </div>
               <div class="value-desc">
                 <i class="fa-solid fa-leaf"></i>
                 <p>
-                  Our technicians are fully trained in safety procedures and are
-                  equipped with the latest and well-maintained equipment.
+                  We use advanced safety equipment and techniques to ensure a
+                  safe and secure work environment.
                 </p>
               </div>
               <div class="value-desc">
                 <i class="fa-solid fa-leaf"></i>
                 <p>
-                  We continuously monitor and review our safety protocols to
-                  ensure they are up-to-date with the latest guidelines and
-                  regulations.
-                </p>
-              </div>
-              <div class="value-desc">
-                <i class="fa-solid fa-leaf"></i>
-                <p>
-                  We invest in regular safety training and workshops for our
-                  team members to ensure everyone is equipped with the knowledge
-                  to work safely.
+                  We maintain all necessary insurance and licenses to protect
+                  our customers and employees, giving our customers peace of
+                  mind when they choose us for their roofing and gutter needs.
                 </p>
               </div>
             </div>
@@ -205,23 +250,22 @@
 
     <footer>
       <div class="section-container">
-        <div class="working-hours">
+        <div class="fcontent">
           <span>Working Hours</span>
           <p>Monday - Friday</p>
           <p>7AM - 5PM</p>
         </div>
-        <div class="socials">
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-        <div class="working-hours">
+        <div class="fcontent">
           <span>Phone Us</span>
-          <p>Loic Conzatti</p>
-          <p>0437 803 966</p>
+          <a href="tel:0431076313"
+            ><i class="fa-solid fa-mobile-screen-button"></i> 0431 076 313</a
+          >
         </div>
         <div class="logo">
-          <img src="./../assets/img/logo.png" alt="logo-cra" />
+          <img
+            src="./../assets/img/logo/rnc-low-resolution-color-logo.png"
+            alt="logo-rnc"
+          />
         </div>
       </div>
     </footer>
@@ -229,7 +273,7 @@
       type="module"
       src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/shoelace.js"
     ></script>
-    <script src="./../assets/scripts/index.js"></script>
-    <script src="./../assets/scripts/about.js"></script>
+    <script src="./../assets/scripts/menu.js"></script>
+    <script src="./../assets/scripts/inspection.js"></script>
   </body>
 </html>

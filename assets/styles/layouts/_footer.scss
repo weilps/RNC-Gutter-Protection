@@ -11,27 +11,24 @@ footer {
     height: 100%;
     align-items: center;
     display: flex;
-    .working-hours {
+    justify-content: space-between;
+    .fcontent {
       padding-left: 20px;
       width: 300px;
       span {
         display: block;
         margin-bottom: 5px;
-        font-size: 1rem;
         color: $color3;
       }
       p {
-        font-size: 0.8rem;
+        color: $color2;
       }
     }
     .logo {
-      height: 100%;
+      height: 150px;
       width: 300px;
       img {
         height: 100%;
-      }
-      @media screen and (max-width: 420px) {
-        display: none;
       }
     }
   }

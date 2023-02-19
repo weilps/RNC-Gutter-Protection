@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Conzatti Rope Access</title>
+    <title>RNC Gutter Protection - FREE inspection</title>
     <meta
       name="description"
-      content="Conzatti Rope Access provides professional and reliable Melbourne and Victoria based rope access services for a wide range of industrial and commercial projects. Contact us for more information."
+      content="Protect your roof with the experts at RNC Gutter Protection. Our experienced technicians offer top-quality gutter mesh installation, roof cleaning, roof painting, solar panel cleaning, and more. Get a free inspection and quote today."
     />
 
-    <meta property="og:title" content="Conzatti Rope Access" />
-    <meta property="og:type" content="Industrial Rope Access company " />
-    <meta property="og:url" content="https://conzattiropeaccess.com" />
+    <meta
+      property="og:title"
+      content="RNC Gutter Protection - FREE inspection"
+    />
+    <meta property="og:type" content="Gutter Protection Installation company" />
+    <meta property="og:url" content="https://rncgutterprotection.com.au" />
     <meta
       name="og:description"
-      content="Conzatti Rope Access provides professional and reliable Melbourne and Victoria based rope access services for a wide range of industrial and commercial projects. Contact us for more information."
+      content="Protect your roof with the experts at RNC Gutter Protection. Our experienced technicians offer top-quality gutter mesh installation, roof cleaning, roof painting, solar panel cleaning, and more. Get a free inspection and quote today."
     />
-    <meta property="og:image" content="./assets/img/logo.png" />
+    <meta
+      property="og:image"
+      content="./assets/img/logo/rnc-low-resolution-color-logo.png"
+    />
 
     <!--Font Awesome Library-->
     <link
@@ -30,7 +36,6 @@
     />
 
     <!-- Shoelace -->
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/themes/light.css"
@@ -39,36 +44,47 @@
     <!-- Styles perso -->
     <link rel="stylesheet" href="./../assets/styles/index.css" />
 
-    <link rel="tab icon" href="./../assets/img/logo.png" />
+    <link
+      rel="tab icon"
+      href="./assets/img/logo/rnc-low-resolution-logo-black-on-transparent-background.png"
+    />
   </head>
   <body>
-    <div class="bg-rat" id="rat1"></div>
-    <div class="bg-rat" id="rat2"></div>
-    <div class="bg-rat" id="rat3"></div>
-    <div class="bg-rat" id="rat4"></div>
     <header>
+      <div class="section-bg bghead"></div>
       <nav>
         <div class="nav-container">
           <div class="logo">
-            <img src="./../assets/img/logo.png" alt="logo-cra" />
+            <img
+              src="./../assets/img/logo/rnc-low-resolution-color-logo.png"
+              alt="logo-rnc"
+            />
           </div>
           <div class="menu">
             <ul>
               <li><a href="./../index.html">Home</a></li>
-              <li><a href="./about.html">About</a></li>
-              <li id="oui">
-                <a href="#">Services</a>
+              <li>
+                <a href="./about.html" id="about">About</a>
               </li>
-              <li><a href="./contact.html">Contact</a></li>
+              <li id="oui">
+                <a href="#" id="services">Services</a>
+              </li>
+              <li>
+                <a href="./products.html" id="producs">Products</a>
+              </li>
+              <li>
+                <a href="./contact.html" id="contact">Contact</a>
+              </li>
             </ul>
+          </div>
+
+          <div class="call">
+            <a href="tel:0431076313">
+              <i class="fa-solid fa-mobile-screen-button"></i> 0431 076 313
+            </a>
           </div>
           <div class="burger-bun">
             <i class="fa-solid fa-bars"></i>
-          </div>
-          <div class="socials">
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
       </nav>
@@ -81,13 +97,15 @@
       <div class="bg" id="bg-services"></div>
       <div class="section-container">
         <div class="prompt">
-          <h6>
-            At Conzatti Rope Access, we are proud to offer a comprehensive range
-            of high-quality rope access services to meet your every need.
-          </h6>
+          <p>
+            Protecting your home from the elements is our top priority. We're
+            here to help! We offer high-quality products, professional services,
+            and a commitment to excellence. Trust in our expertise to ensure
+            your home stays safe and protected for years to come!
+          </p>
         </div>
         <div class="signature-services">
-          <h3>Our Signature Services</h3>
+          <h3>A glance of what we can provide:</h3>
           <div class="sig-serv" id="mesh-install">
             <div class="left content">
               <div class="container">
@@ -96,20 +114,24 @@
                   <h5>Gutter mesh protection installation</h5>
                 </div>
                 <p>
-                  Facade Remedial is our expert service, delivering outstanding
-                  results for all your residential, commercial and industrial
-                  painting needs, including industrial coating and texture
-                  coating
+                  Our gutter mesh protection installation service is designed to
+                  keep your gutters clean and free from debris, vermin, and
+                  other potential sources of damage. We will provide a reliable
+                  and effective solution to protect your home and keep your
+                  gutters in top condition for the long term.
                 </p>
+                <sl-button variant="primary" pill class="product-call-button"
+                  ><a href="./contact.html">Get a FREE quote NOW!</a></sl-button
+                >
               </div>
             </div>
             <div class="right3">
-              <div class="sig-serv-img"></div>
+              <div class="sig-serv-img" id="mesh-install-p"></div>
             </div>
           </div>
           <div class="sig-serv" id="gutter-cleaning">
             <div class="left">
-              <div class="sig-serv-img"></div>
+              <div class="sig-serv-img" id="gutter-cleaning-p"></div>
             </div>
             <div class="right3 content">
               <div class="container">
@@ -118,11 +140,14 @@
                   <h5>Gutter cleaning</h5>
                 </div>
                 <p>
-                  Fix or transform your concrete structures with our expert
-                  Concrete Works services. We will perform all works from any
-                  repairs (concrete, mortar, crack, render) to whole Facade
-                  render.
+                  Gutter cleaning is an essential service that helps to maintain
+                  the condition of your gutters, prevent blockages and damage,
+                  and ensure the effective functioning of your home's drainage
+                  system.
                 </p>
+                <sl-button variant="primary" pill class="product-call-button"
+                  ><a href="./contact.html">Get a FREE quote NOW!</a></sl-button
+                >
               </div>
             </div>
           </div>
@@ -134,21 +159,23 @@
                   <h5>Repointing</h5>
                 </div>
                 <p>
-                  Our expert team at Conzatti Rope Access brings over 10 years
-                  of experience in both urban and geotechnical rigging to your
-                  job site. We guarantee safe and technical rigging solutions
-                  for all your needs, no matter if you need to hoist something
-                  on the roof or access hard-to-reach areas.
+                  Repointing is a crucial aspect of maintaining the integrity of
+                  your roof. Over time, mortar between roof tiles can begin to
+                  crack or disintegrate, leading to leaks, water damage, and
+                  other issues.
                 </p>
+                <sl-button variant="primary" pill class="product-call-button"
+                  ><a href="./contact.html">Get a FREE quote NOW!</a></sl-button
+                >
               </div>
             </div>
             <div class="right3">
-              <div class="sig-serv-img"></div>
+              <div class="sig-serv-img" id="repointing-p"></div>
             </div>
           </div>
           <div class="sig-serv" id="roof-cleaning">
             <div class="left">
-              <div class="sig-serv-img"></div>
+              <div class="sig-serv-img" id="roof-cleaning-p"></div>
             </div>
             <div class="right3 content">
               <div class="container">
@@ -157,36 +184,44 @@
                   <h5>Roof Cleaning</h5>
                 </div>
                 <p>
-                  We ensure the safety of our clients and their job sites by
-                  providing trained and equipped personnel ready to respond to
-                  any emergency situation.
+                  Roof cleaning is an essential aspect of maintaining the
+                  appearance and longevity of your roof. Over time, moss, dirt,
+                  and debris can build up on your roof, leading to water damage,
+                  leaks, and other problems. Our team of experts will leave your
+                  roof looking and functioning at its best.
                 </p>
+                <sl-button variant="primary" pill class="product-call-button"
+                  ><a href="./contact.html">Get a FREE quote NOW!</a></sl-button
+                >
               </div>
             </div>
           </div>
-          <div class="sig-serv" id="roof-painting>
-          <div class="left content">
-            <div class="container">
-              <div class="sig-serv-title">
-                <div class="sig-serv-icon"></div>
-                <h5>Roof painting</h5>
+          <div class="sig-serv" id="roof-painting">
+            <div class="left content">
+              <div class="container">
+                <div class="sig-serv-title">
+                  <div class="sig-serv-icon"></div>
+                  <h5>Roof painting</h5>
+                </div>
+                <p>
+                  Does your roof need a refresher? Roof painting is an excellent
+                  way to rejuvenate the appearance of your home and add value to
+                  your property. Our team of experts specializes in roof
+                  painting services, offering a wide range of colors and
+                  finishes to give your roof a brand-new look.
+                </p>
+                <sl-button variant="primary" pill class="product-call-button"
+                  ><a href="./contact.html">Get a FREE quote NOW!</a></sl-button
+                >
               </div>
-              <p>
-                Our experienced team can provide comprehensive Work at Heights
-                consulting and auditing services, ensuring that your job is
-                compliant with all relevant safety regulations and guidelines.
-                We work closely with our clients to identify potential hazards
-                and provide recommendations for improvement, to create a safe
-                and secure environment for everyone.
-              </p>
             </div>
-          </div>
-          <div class="right3">
-            <div class="sig-serv-img"></div>
+            <div class="right3">
+              <div class="sig-serv-img" id="roof-painting-p"></div>
+            </div>
           </div>
           <div class="sig-serv" id="rebedding-capping">
             <div class="left">
-              <div class="sig-serv-img"></div>
+              <div class="sig-serv-img" id="rebedding-capping-p"></div>
             </div>
             <div class="right3 content">
               <div class="container">
@@ -195,12 +230,16 @@
                   <h5>Re-bedding & Capping</h5>
                 </div>
                 <p>
-                  Our team is equipped to tackle even the most challenging of
-                  projects, no matter where they may be located. Whether you
-                  need work done in a Victorian remote area or interstate, we
-                  have the expertise and resources necessary to get the job done
-                  right.
+                  Re-bedding and capping are essential aspects of maintaining
+                  the structural integrity of your roof. Over time, the bedding
+                  material and capping on your roof can become damaged, leading
+                  to leaks and other problems. We use the highest quality
+                  materials and techniques to ensure a durable and long-lasting
+                  solution to your roofing needs."
                 </p>
+                <sl-button variant="primary" pill class="product-call-button"
+                  ><a href="./contact.html">Get a FREE quote NOW!</a></sl-button
+                >
               </div>
             </div>
           </div>
@@ -212,89 +251,61 @@
                   <h5>Solar panel cleaning</h5>
                 </div>
                 <p>
-                  Facade Remedial is our expert service, delivering outstanding
-                  results for all your residential, commercial and industrial
-                  painting needs, including industrial coating and texture
-                  coating
+                  Maximizing the performance of your solar panels means
+                  maximizing your energy savings, and we're here to help. Trust
+                  us to keep your solar panels working their best, and keep your
+                  energy bills low.
                 </p>
+                <sl-button variant="primary" pill class="product-call-button"
+                  ><a href="./contact.html">Get a FREE quote NOW!</a></sl-button
+                >
               </div>
             </div>
             <div class="right3">
-              <div class="sig-serv-img"></div>
+              <div class="sig-serv-img" id="solar-panel-p"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="other-serv">
-      <div class="sig-serv section-container" id="other-serv">
-        <div class="container-top">
-          <div class="sig-serv-title">
-            <div class="sig-serv-icon"></div>
-            <h5>Other services</h5>
-          </div>
-          <p>
-            In addition to our signature services, we also offer a wide range of
-            other specialized services to meet your specific needs. Here's a
-            look at some of the other services we provide:
-          </p>
-        </div>
-        <div class="container-content">
-          <div class="bg" id="bg-otherserv"></div>
-          <div class="grid">
-            <ul>
-              <li>Caulking services</li>
-              <li>Leak detection</li>
-              <li>Cladding & Carpentry</li>
-              <li>Sign Installation & removal</li>
-              <li>Restricted and confined space</li>
-              <li>Netting</li>
-              <li>Window cleaning</li>
-              <li>Industrial abseiling</li>
-              <li>Height Safety systems installation & consultation</li>
-              <li>Building Survey</li>
-              <li>Bird control</li>
-              <!-- <li>
-                  <sl-details
-                    summary="Contracting services"
-                    class="custom-icons"
-                  >
-                    <sl-icon name="plus-square" slot="expand-icon"></sl-icon>
-                    <sl-icon name="dash-square" slot="collapse-icon"></sl-icon>
-                    Partner with us for all your contracting needs. Conzatti
-                    Rope Access is a trusted supplier for many abseiling
-                    companies in the city, providing top-notch service to meet
-                    all your requirements.
-                  </sl-details>
-                </li> -->
-            </ul>
-          </div>
-        </div>
+
+    <section class="inspection">
+      <div class="section-bg bgins" id="bginsp2"></div>
+      <div class="section-container">
+        <a href="./pages/contact.html" class="bt-inspection"
+          >Get your FREE inspection and FREE quote today!<i
+            class="fa-solid fa-arrow-right"
+          ></i>
+        </a>
       </div>
     </section>
 
     <footer>
       <div class="section-container">
-        <div class="working-hours">
+        <div class="fcontent">
           <span>Working Hours</span>
           <p>Monday - Friday</p>
           <p>7AM - 5PM</p>
         </div>
-        <div class="working-hours">
+        <div class="fcontent">
           <span>Phone Us</span>
-          <p>Loic Conzatti</p>
-          <p>0437 803 966</p>
+          <a href="tel:0431076313"
+            ><i class="fa-solid fa-mobile-screen-button"></i> 0431 076 313</a
+          >
         </div>
         <div class="logo">
-          <img src="./../assets/img/logo.png" alt="logo-cra" />
+          <img
+            src="./../assets/img/logo/rnc-low-resolution-color-logo.png"
+            alt="logo-rnc"
+          />
         </div>
       </div>
     </footer>
-
-    <script src="./../assets/scripts/services.js"></script>
     <script
       type="module"
       src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/shoelace.js"
     ></script>
+    <script src="./../assets/scripts/menu.js"></script>
+    <script src="./../assets/scripts/inspection.js"></script>
   </body>
 </html>

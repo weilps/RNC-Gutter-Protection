@@ -1,0 +1,192 @@
+.form {
+  padding-bottom: 100px;
+
+  .section-container {
+    display: block;
+    color: $color1;
+    h3 {
+      color: $color3;
+      padding: 100px;
+      margin: 0 auto;
+      @media screen and (max-width: 925px) {
+        padding: 100px 0;
+      }
+    }
+    .bi {
+      flex-direction: row-reverse;
+      gap: 50px;
+      background: white;
+      padding: 50px;
+      border-radius: 35px;
+    }
+    .contact-form {
+      form {
+        padding: 15px;
+        box-shadow: 10px -11px 5px 0px $color1o;
+        border: $color1 1px solid;
+        border-radius: 25px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 450px;
+        h5 {
+          color: $color4;
+        }
+        p {
+          padding: 25px 0;
+          // text-align: justify;
+        }
+        .container-form {
+          position: relative;
+          i {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 20px;
+          }
+          input {
+            margin: 5px 0;
+            width: 100%;
+            padding: 20px 40px;
+            border: $color3 1px solid;
+            border-radius: 20px;
+          }
+          .custom-select {
+            width: 100%;
+            position: relative;
+            padding: 5px 0;
+            select {
+              display: none;
+            }
+
+            // CUSTOM CODE
+            .select-selected {
+              background-color: white;
+              border-radius: 15px;
+              font-size: 0.8rem;
+              height: 50px;
+              padding-top: 15px;
+
+              /* Style the arrow inside the select element: */
+              &::after {
+                position: absolute;
+                content: "";
+                top: 25px;
+                right: 10px;
+                width: 0;
+                height: 0;
+                border: 6px solid transparent;
+                border-color: $color1 transparent transparent transparent;
+              }
+            }
+
+            /* Point the arrow upwards when the select box is open (active): */
+            .select-selected.select-arrow-active {
+              &::after {
+                border-color: transparent transparent $color1 transparent;
+                top: 19px;
+              }
+            }
+          }
+
+          /* style the items (options), including the selected item: */
+          .select-items div,
+          .select-selected {
+            color: $color1;
+            padding: 8px 16px;
+            border: 1px solid transparent;
+            border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+            cursor: pointer;
+          }
+
+          /* Style items (options): */
+          .select-items {
+            position: absolute;
+            background-color: white;
+            top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 99;
+          }
+
+          /* Hide the items when the select box is closed: */
+          .select-hide {
+            display: none;
+          }
+
+          .select-items div:hover,
+          .same-as-selected {
+            background-color: rgba(0, 0, 0, 0.1);
+          }
+
+          textarea {
+            margin: 5px 0;
+            width: 100%;
+            padding: 20px;
+            border: $color3 1px solid;
+            border-radius: 20px;
+            height: 200px;
+          }
+
+          #submit-bt1 {
+            width: 200px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1rem;
+            padding: 20px;
+            cursor: pointer;
+            transition: 0.4s;
+            &:hover {
+              letter-spacing: 3px;
+            }
+          }
+        }
+      }
+    }
+    .contact-dets {
+      border-radius: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .location {
+        position: relative;
+        padding: 25px 0;
+        .location-t {
+          padding: 25px 0;
+          display: flex;
+          align-items: center;
+          i {
+            font-size: 3rem;
+            padding-right: 15px;
+          }
+          h5 {
+            text-align: left;
+            color: $color4;
+          }
+        }
+        &::before {
+          content: "";
+          background: $color1;
+          position: absolute;
+          width: 50%;
+          height: 50%;
+          clip-path: polygon(0 0, 100% 0, 100% 3%, 1% 3%, 1% 100%, 0 100%);
+          top: 20%;
+          left: -5%;
+        }
+        a {
+          i {
+            color: $color1;
+          }
+          color: $color4;
+        }
+      }
+
+      .contact-img {
+        margin: 25px 0 25px 25px;
+        background: url(./../img/roof-std.jpg) center/cover;
+        height: 250px;
+        width: 100%;
+      }
+    }
+  }
+}

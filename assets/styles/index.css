@@ -17,31 +17,35 @@ html {
   font-family: "font-1", sans-serif;
 }
 
+section {
+  position: relative;
+}
+
 h1,
 h2 {
   text-transform: uppercase;
-  font-size: 3.5rem;
+  font-size: 4rem;
   text-align: center;
   letter-spacing: 8px;
 }
 @media screen and (max-width: 1440px) {
   h1,
   h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     letter-spacing: 5px;
   }
 }
 @media screen and (max-width: 925px) {
   h1,
   h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     letter-spacing: 4px;
   }
 }
 @media screen and (max-width: 420px) {
   h1,
   h2 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     letter-spacing: 3px;
   }
 }
@@ -71,10 +75,61 @@ h3 {
   }
 }
 
+h4 {
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1440px) {
+  h4 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+}
+@media screen and (max-width: 925px) {
+  h4 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+}
+@media screen and (max-width: 420px) {
+  h4 {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+}
+
+h5 {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1440px) {
+  h5 {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+  }
+}
+@media screen and (max-width: 925px) {
+  h5 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 420px) {
+  h5 {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+}
+
 p {
   font-size: 1.2rem;
   letter-spacing: 1px;
   font-weight: 300;
+  color: rgb(26, 26, 26);
 }
 @media screen and (max-width: 925px) {
   p {
@@ -83,16 +138,47 @@ p {
 }
 
 span {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 500;
+  letter-spacing: 3px;
   color: rgb(82, 130, 101);
+}
+@media screen and (max-width: 1440px) {
+  span {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 925px) {
+  span {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+}
+@media screen and (max-width: 420px) {
+  span {
+    font-size: 1.1rem;
+  }
 }
 
 a,
 a:visited {
   text-decoration: none;
-  transition: 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  color: rgb(201, 239, 199);
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 925px) {
+  a,
+  a:visited {
+    font-size: 1rem;
+  }
+}
+
+sl-button {
+  transition: all 0.4s ease-in-out;
 }
 
 .sticky {
@@ -101,16 +187,182 @@ a:visited {
   width: 100%;
 }
 
-.bg-section {
-  background: url(./../img/background-bw.png) center/cover fixed;
+.section-container {
   width: 100%;
+  max-width: 1920px;
+  padding: 50px 100px;
+}
+
+.section-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.bghead {
+  background: url(./../img/bg-1.jpeg) top/cover;
+  opacity: 1;
+  filter: brightness(50%);
+  height: 70vh;
+}
+
+#bghome {
+  height: 100vh;
+}
+
+.bglight {
+  background: url(./../img/background-bw.png) center/cover fixed;
   opacity: 0.2;
 }
 
+.bgins {
+  background: url(./../img/bg-2.jpeg) center/cover fixed;
+  opacity: 0.5;
+  transition: all 0.4s ease-in-out;
+}
+
+.bgcont {
+  background: url(./../img/roof-std.jpg) center/cover fixed;
+  filter: brightness(30%);
+}
+
+.bi {
+  display: flex;
+}
+
+.left1,
+.right1 {
+  width: 50%;
+}
+
 .inspection {
-  height: 400px;
-  z-index: -1;
+  position: relative;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.inspection a,
+.inspection a:visited {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  min-width: 400px;
+  margin: 0 auto;
+  background: rgb(82, 130, 101);
+  padding: 35px 25px;
+  border-radius: 25px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border: rgb(82, 130, 101) 1px solid;
+  align-items: center;
+}
+.inspection a:hover,
+.inspection a:visited:hover {
+  letter-spacing: 3px;
+  color: rgb(236, 236, 236);
+  background: rgb(26, 26, 26);
+  border: rgb(26, 26, 26) 1px solid;
+}
+.inspection a:hover i,
+.inspection a:visited:hover i {
+  transform: scale(1.5);
+}
+.inspection a i,
+.inspection a:visited i {
+  padding-left: 15px;
+  transition: all 0.4s ease-in-out;
+}
+@media screen and (max-width: 1440px) {
+  .inspection a,
+  .inspection a:visited {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 925px) {
+  .inspection a,
+  .inspection a:visited {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .inspection a,
+  .inspection a:visited {
+    font-size: 1.1rem;
+  }
+}
+
+.bt {
+  transition: all 0.4s ease-in-out;
+  text-align: center;
+}
+.bt:hover {
+  transform: scale(1.05);
+}
+.bt:hover i {
+  transform: scale(2);
+}
+.bt i {
+  transition: 0.4s ease-in-out;
+  font-size: 1.4rem;
+}
+.bt a {
+  padding: 15px 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  position: relative;
+}
+.bt a::after {
+  content: "";
+  height: 2px;
+  width: 70%;
+  position: absolute;
+  bottom: 11px;
+  left: 15%;
+  transform: scaleX(0);
+}
+.bt a:hover {
+  padding: 15px 25px;
+}
+.bt a:hover::after {
+  transform: scaleX(0);
+  animation: animRoll 1s ease-in-out forwards;
+}
+
+.darkbt a {
+  color: rgb(26, 26, 26);
+}
+.darkbt a::after {
+  background: rgb(26, 26, 26);
+}
+
+.lightbt a {
+  color: rgb(236, 236, 236);
+}
+.lightbt a::after {
+  background: rgb(236, 236, 236);
+}
+
+.anim-simple {
+  position: relative;
+}
+.anim-simple:hover::after {
+  content: "";
+  background: rgb(82, 130, 101);
+  position: absolute;
+  height: 1px;
+  width: 90%;
+  bottom: -3px;
+  left: 10%;
+  transform: scaleX(0);
+  animation: animRoll 0.4s ease-in forwards;
 }
 
 @keyframes animRoll {
@@ -119,12 +371,11 @@ a:visited {
   }
 }
 header {
-  min-height: 40vh;
-  background: url(./../img/background-01.jpeg) top/cover;
+  min-height: 70vh;
   width: 100%;
-  z-index: 0;
   padding-bottom: 5vh;
   box-shadow: 5px 7px 14px 0px rgba(0, 0, 0, 0.74);
+  overflow: hidden;
 }
 header nav {
   z-index: 10;
@@ -151,7 +402,7 @@ header nav .nav-container .logo img {
   height: 100%;
 }
 header nav .nav-container .menu {
-  width: 400px;
+  width: 600px;
 }
 header nav .nav-container .menu ul {
   width: 100%;
@@ -177,7 +428,7 @@ header nav .nav-container .menu ul li:hover::after {
   width: 100%;
   background: rgb(236, 236, 236);
   transform: scaleX(0);
-  animation: menuAnim 0.4s ease-in-out forwards;
+  animation: animRoll 0.4s ease-in-out forwards;
 }
 @media screen and (max-width: 925px) {
   header nav .nav-container .menu ul li:hover::after {
@@ -227,17 +478,19 @@ header nav .nav-container .menu ul #oui::after {
 }
 @media screen and (max-width: 925px) {
   header nav .nav-container .menu {
-    position: fixed;
+    position: absolute;
     top: 100px;
     right: -100%;
     width: 200px;
-    height: 300px;
-    background-color: white;
+    height: 400px;
+    background-color: rgba(82, 130, 101, 0.709);
+    border-radius: 10px;
     transition: right 0.4s ease-in-out;
   }
 }
 header nav .nav-container .menu.open {
   right: 0;
+  z-index: 10;
 }
 header nav .nav-container .burger-bun {
   display: none;
@@ -256,46 +509,84 @@ header nav .nav-container .burger-bun {
     font-size: 2rem;
   }
 }
-header nav .nav-container .socials {
+header nav .nav-container .call {
   padding-right: 20px;
-  width: 150px;
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 925px) {
-  header nav .nav-container .socials {
-    position: fixed;
-    top: 350px;
+  header nav .nav-container .call {
+    position: absolute;
+    top: 400px;
     right: -100%;
     width: 200px;
     height: 25px;
-    background-color: white;
     transition: right 0.4s ease-in-out;
     padding: 25px;
   }
 }
-header nav .nav-container .socials.open {
+header nav .nav-container .call.open {
+  z-index: 10;
   right: 0;
+}
+@media screen and (max-width: 925px) {
+  header nav .nav-container {
+    position: relative;
+  }
 }
 header .title-container {
   width: 100%;
   justify-content: center;
 }
+header .title-container h1 {
+  padding: 15vh 0 5vh;
+  margin: 0 auto;
+  max-width: 90%;
+  color: rgb(236, 236, 236);
+}
+header .title-container img {
+  height: 15vh;
+  display: block;
+  margin: 0 auto 8vh;
+}
 header .title-container h2 {
-  padding: 5vh 8vw 0;
+  color: rgb(236, 236, 236);
+  display: inline-block;
+  text-align: left;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  border-radius: 20px;
+  margin: 15vh 8vw 0;
+}
+header .title-container h3 {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(236, 236, 236);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  max-width: 80%;
 }
 header .title-container a {
   display: block;
   text-align: center;
-  margin: 15vh auto 0;
-  width: 150px;
+  margin: 8vh auto 0;
+  color: rgb(201, 239, 199);
+}
+header .title-container a::after {
+  background: rgb(201, 239, 199);
+  bottom: -2px;
+  left: 35%;
+  width: 30%;
+}
+header .title-container a i {
+  padding-left: 15px;
 }
 
-@keyframes menuAnim {
-  100% {
-    transform: scaleX(1);
-  }
+#headerMain {
+  min-height: 100vh;
 }
+
 footer {
   width: 100%;
   height: 150px;
@@ -313,29 +604,666 @@ footer .section-container {
   height: 100%;
   align-items: center;
   display: flex;
+  justify-content: space-between;
 }
-footer .section-container .working-hours {
+footer .section-container .fcontent {
   padding-left: 20px;
   width: 300px;
 }
-footer .section-container .working-hours span {
+footer .section-container .fcontent span {
   display: block;
   margin-bottom: 5px;
-  font-size: 1rem;
   color: rgb(236, 236, 236);
 }
-footer .section-container .working-hours p {
-  font-size: 0.8rem;
+footer .section-container .fcontent p {
+  color: rgb(201, 239, 199);
 }
 footer .section-container .logo {
-  height: 100%;
+  height: 150px;
   width: 300px;
 }
 footer .section-container .logo img {
   height: 100%;
 }
-@media screen and (max-width: 420px) {
-  footer .section-container .logo {
-    display: none;
+
+.about {
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.about .section-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 100px;
+  grid-template-areas: "l r" "rm rm";
+  gap: 25px;
+}
+.about .left {
+  grid-area: l;
+  background: url("./../img/roof-std.jpg") center/cover;
+}
+.about .right {
+  grid-area: r;
+  text-align: justify;
+}
+.about .right p {
+  padding: 25px 0;
+}
+.about .bt {
+  grid-area: rm;
+  padding-top: 50px;
+}
+
+.services {
+  min-height: 600px;
+  position: relative;
+}
+.services h2 {
+  padding-bottom: 50px;
+}
+.services .bi {
+  gap: 25px;
+}
+.services .left1 {
+  background: url("./../img/roof-std.jpg") center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.services .left1 p {
+  text-align: justify;
+  color: rgb(236, 236, 236);
+  padding: 25px;
+  background: rgba(27, 27, 27, 0.334);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+.services .right1 .grid-content {
+  display: flex;
+  padding: 5px 0;
+  align-items: center;
+}
+.services .right1 .grid-content .icon-gutter {
+  background: url("./../img/gutter-protection-sketch-1.png") center/cover;
+  width: 40px;
+  height: 40px;
+}
+.services .right1 .grid-content a {
+  padding-left: 15px;
+  color: rgb(82, 130, 101);
+}
+.services .bt {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact {
+  color: rgb(236, 236, 236);
+}
+.contact h2 {
+  padding-bottom: 50px;
+}
+.contact p {
+  color: rgb(236, 236, 236);
+  padding: 25px;
+  font-weight: 600;
+  background: rgba(37, 37, 37, 0.353);
+  border-radius: 50px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contact .bt {
+  margin: 50px auto 0;
+  padding: 10px 0;
+  border-radius: 20px;
+  background: rgb(82, 130, 101);
+  width: 350px;
+}
+.contact .bt a,
+.contact .bt i {
+  font-weight: 800;
+  color: rgb(201, 239, 199);
+}
+
+.history {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 0;
+}
+.history .section-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.history .section-container h3 {
+  text-align: left;
+  width: 30%;
+}
+@media screen and (max-width: 925px) {
+  .history .section-container h3 {
+    margin: 0 auto;
+    width: 60%;
+    padding-bottom: 50px;
   }
+}
+.history .section-container p {
+  width: 60%;
+  text-align: justify;
+}
+@media screen and (max-width: 925px) {
+  .history .section-container p {
+    margin: 0 auto;
+    min-width: 400px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .history .section-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 925px) {
+  .history .section-container {
+    display: block;
+  }
+}
+
+#bg3 {
+  background: url(./../img/roof-std.jpg) center/cover fixed;
+  height: 400px;
+}
+
+#bg4 {
+  background: url(./../img/roof-std.jpg) center/cover fixed;
+  height: 400px;
+  z-index: -1;
+}
+
+.banner .section-container {
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.banner .section-container .card-overview {
+  max-width: 200px;
+}
+.banner .section-container .card-overview::part(image) {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: 90%;
+}
+.banner .section-container .card-overview::part(body) {
+  height: 150px;
+}
+.banner .section-container .card-overview [slot=footer] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.values {
+  overflow: hidden;
+  position: relative;
+}
+.values .section-container {
+  margin: 100px;
+  z-index: 3;
+  display: block;
+}
+.values .section-container .value {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+.values .section-container .value .left,
+.values .section-container .value .right2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+}
+.values .section-container .value .left h4,
+.values .section-container .value .right2 h4 {
+  color: rgb(82, 130, 101);
+  text-transform: uppercase;
+  padding: 50px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.values .section-container .value .left #rat-07,
+.values .section-container .value .right2 #rat-07 {
+  background: url(./../img/roof-std.jpg) center/cover;
+  height: 300px;
+  width: 250px;
+}
+.values .section-container .value .left #rat-06,
+.values .section-container .value .right2 #rat-06 {
+  background: url(./../img/roof-std.jpg) center/cover;
+  height: 300px;
+  width: 250px;
+}
+.values .section-container .value .right,
+.values .section-container .value .left2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+.values .section-container .value .right .container,
+.values .section-container .value .left2 .container {
+  position: relative;
+}
+.values .section-container .value .right .container::after,
+.values .section-container .value .left2 .container::after {
+  position: absolute;
+  content: "";
+  background: rgb(82, 130, 101);
+  height: 92%;
+  width: 1px;
+  top: 20px;
+  left: 12%;
+}
+.values .section-container .value .value-desc {
+  display: flex;
+  padding: 15px 0;
+  justify-content: space-between;
+}
+.values .section-container .value .value-desc i {
+  width: 10%;
+  font-size: 2rem;
+  color: rgb(82, 130, 101);
+}
+.values .section-container .value .value-desc p {
+  width: 80%;
+  text-align: left;
+}
+
+.form {
+  padding-bottom: 100px;
+}
+.form .section-container {
+  display: block;
+  color: rgb(82, 130, 101);
+}
+.form .section-container h3 {
+  color: rgb(236, 236, 236);
+  padding: 100px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 925px) {
+  .form .section-container h3 {
+    padding: 100px 0;
+  }
+}
+.form .section-container .bi {
+  flex-direction: row-reverse;
+  gap: 50px;
+  background: white;
+  padding: 50px;
+  border-radius: 35px;
+}
+.form .section-container .contact-form form {
+  padding: 15px;
+  box-shadow: 10px -11px 5px 0px rgba(82, 130, 101, 0.709);
+  border: rgb(82, 130, 101) 1px solid;
+  border-radius: 25px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 450px;
+}
+.form .section-container .contact-form form h5 {
+  color: rgb(26, 26, 26);
+}
+.form .section-container .contact-form form p {
+  padding: 25px 0;
+}
+.form .section-container .contact-form form .container-form {
+  position: relative;
+  /* style the items (options), including the selected item: */
+  /* Style items (options): */
+  /* Hide the items when the select box is closed: */
+}
+.form .section-container .contact-form form .container-form i {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 20px;
+}
+.form .section-container .contact-form form .container-form input {
+  margin: 5px 0;
+  width: 100%;
+  padding: 20px 40px;
+  border: rgb(236, 236, 236) 1px solid;
+  border-radius: 20px;
+}
+.form .section-container .contact-form form .container-form .custom-select {
+  width: 100%;
+  position: relative;
+  padding: 5px 0;
+  /* Point the arrow upwards when the select box is open (active): */
+}
+.form .section-container .contact-form form .container-form .custom-select select {
+  display: none;
+}
+.form .section-container .contact-form form .container-form .custom-select .select-selected {
+  background-color: white;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  height: 50px;
+  padding-top: 15px;
+  /* Style the arrow inside the select element: */
+}
+.form .section-container .contact-form form .container-form .custom-select .select-selected::after {
+  position: absolute;
+  content: "";
+  top: 25px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: rgb(82, 130, 101) transparent transparent transparent;
+}
+.form .section-container .contact-form form .container-form .custom-select .select-selected.select-arrow-active::after {
+  border-color: transparent transparent rgb(82, 130, 101) transparent;
+  top: 19px;
+}
+.form .section-container .contact-form form .container-form .select-items div,
+.form .section-container .contact-form form .container-form .select-selected {
+  color: rgb(82, 130, 101);
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+.form .section-container .contact-form form .container-form .select-items {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.form .section-container .contact-form form .container-form .select-hide {
+  display: none;
+}
+.form .section-container .contact-form form .container-form .select-items div:hover,
+.form .section-container .contact-form form .container-form .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.form .section-container .contact-form form .container-form textarea {
+  margin: 5px 0;
+  width: 100%;
+  padding: 20px;
+  border: rgb(236, 236, 236) 1px solid;
+  border-radius: 20px;
+  height: 200px;
+}
+.form .section-container .contact-form form .container-form #submit-bt1 {
+  width: 200px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.form .section-container .contact-form form .container-form #submit-bt1:hover {
+  letter-spacing: 3px;
+}
+.form .section-container .contact-dets {
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form .section-container .contact-dets .location {
+  position: relative;
+  padding: 25px 0;
+}
+.form .section-container .contact-dets .location .location-t {
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+}
+.form .section-container .contact-dets .location .location-t i {
+  font-size: 3rem;
+  padding-right: 15px;
+}
+.form .section-container .contact-dets .location .location-t h5 {
+  text-align: left;
+  color: rgb(26, 26, 26);
+}
+.form .section-container .contact-dets .location::before {
+  content: "";
+  background: rgb(82, 130, 101);
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 3%, 1% 3%, 1% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 3%, 1% 3%, 1% 100%, 0 100%);
+  top: 20%;
+  left: -5%;
+}
+.form .section-container .contact-dets .location a {
+  color: rgb(26, 26, 26);
+}
+.form .section-container .contact-dets .location a i {
+  color: rgb(82, 130, 101);
+}
+.form .section-container .contact-dets .contact-img {
+  margin: 25px 0 25px 25px;
+  background: url(./../img/roof-std.jpg) center/cover;
+  height: 250px;
+  width: 100%;
+}
+
+.bg-rat {
+  position: absolute;
+  z-index: 3;
+  width: 80%;
+  height: 50%;
+}
+
+.services #bg-services {
+  background: url(./../img/background-bw.png) center/cover fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  position: absolute;
+}
+.services .section-container .prompt {
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0px 100px 75px;
+  text-align: left;
+}
+.services .section-container .prompt p {
+  color: rgb(26, 26, 26);
+  text-align: justify;
+}
+.services .section-container .signature-services h3 {
+  color: rgb(82, 130, 101);
+}
+.services .section-container .signature-services .sig-serv {
+  text-align: justify;
+  display: flex;
+  margin: 150px 0;
+  gap: 25px;
+}
+.services .section-container .signature-services .sig-serv .content {
+  z-index: 6;
+  padding: 5px 25px;
+  box-shadow: 10px -6px 31px 0px rgba(0, 0, 0, 0.62);
+  transition: 0.4s ease-in-out;
+  background: rgba(82, 130, 101, 0.709);
+}
+.services .section-container .signature-services .sig-serv .content:hover {
+  transform: scale(1.02);
+}
+.services .section-container .signature-services .sig-serv .content p {
+  text-align: justify;
+  color: rgb(236, 236, 236);
+  padding: 25px 0;
+}
+.services .section-container .signature-services .sig-serv .content a {
+  color: rgb(236, 236, 236);
+}
+.services .section-container .signature-services .sig-serv .left,
+.services .section-container .signature-services .sig-serv .right3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-align: left;
+}
+.services .section-container .signature-services .sig-serv .left .container,
+.services .section-container .signature-services .sig-serv .right3 .container {
+  display: block;
+}
+.services .section-container .signature-services .sig-serv .left .sig-serv-img,
+.services .section-container .signature-services .sig-serv .right3 .sig-serv-img {
+  width: 600px;
+  height: 400px;
+  z-index: 6;
+}
+@media screen and (max-width: 1440px) {
+  .services .section-container .signature-services .sig-serv .left .sig-serv-img,
+  .services .section-container .signature-services .sig-serv .right3 .sig-serv-img {
+    width: 400px;
+    height: 300px;
+  }
+}
+.services .section-container .signature-services .sig-serv .left #mesh-install-p,
+.services .section-container .signature-services .sig-serv .right3 #mesh-install-p {
+  background: url("./../img/roof-std.jpg") center/cover;
+}
+.services .section-container .signature-services .sig-serv .left #gutter-cleaning-p,
+.services .section-container .signature-services .sig-serv .right3 #gutter-cleaning-p {
+  background: url("./../img/roof-std.jpg") center/cover;
+}
+.services .section-container .signature-services .sig-serv .left #repointing-p,
+.services .section-container .signature-services .sig-serv .right3 #repointing-p {
+  background: url("./../img/roof-std.jpg") center/cover;
+}
+.services .section-container .signature-services .sig-serv .left #roof-cleaning-p,
+.services .section-container .signature-services .sig-serv .right3 #roof-cleaning-p {
+  background: url("./../img/roof-std.jpg") center/cover;
+}
+.services .section-container .signature-services .sig-serv .left #roof-painting-p,
+.services .section-container .signature-services .sig-serv .right3 #roof-painting-p {
+  background: url("./../img/roof-std.jpg") center/cover;
+}
+.services .section-container .signature-services .sig-serv .left #rebedding-capping-p,
+.services .section-container .signature-services .sig-serv .right3 #rebedding-capping-p {
+  background: url("./../img/roof-std.jpg") center/cover;
+}
+.services .section-container .signature-services .sig-serv .left #solar-panel-p,
+.services .section-container .signature-services .sig-serv .right3 #solar-panel-p {
+  background: url("./../img/roof-std.jpg") center/cover;
+}
+
+.sig-serv-title {
+  display: flex;
+  align-items: center;
+}
+.sig-serv-title .sig-serv-icon {
+  background: url("./../img/gutter-protection-sketch-1.png") center/cover;
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+}
+.sig-serv-title h5 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(201, 239, 199);
+}
+
+.products-t p {
+  line-height: 25px;
+  text-align: justify;
+}
+.products-t .card-container {
+  margin: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.products-t .card-container .card-overview {
+  max-width: 300px;
+  margin: 30px 15px;
+  line-height: 25px;
+}
+.products-t .card-container .card-overview h6 {
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+.products-t .card-container .card-overview::part(body) {
+  height: 200px;
+}
+.products-t .card-container .card-overview [slot=footer] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.products-t .card-container .card-overview [slot=footer] a {
+  color: rgb(236, 236, 236);
+}
+
+.products-l {
+  background: rgb(26, 26, 26);
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(236, 236, 236);
+  padding: 50px;
+  border-radius: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  min-height: 500px;
+}
+.product-container .product-image {
+  background: url("./../img/roof-std.jpg") center/cover;
+  border-radius: 25px;
+  height: 100%;
+  min-height: 450px;
+  width: 50%;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.product-container .product-details {
+  max-width: 50%;
+  width: 50%;
+}
+.product-container .product-details .product-title {
+  margin-bottom: 50px;
+  text-align: left;
+}
+.product-container .product-details .product-description {
+  margin-bottom: 50px;
+  line-height: 25px;
+  text-align: justify;
+}
+.product-container .product-details .product-call-button a {
+  color: rgb(236, 236, 236);
 }/*# sourceMappingURL=index.css.map */
