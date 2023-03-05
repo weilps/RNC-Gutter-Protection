@@ -196,5 +196,18 @@ header {
 }
 
 #headerMain {
-  min-height: 100vh;
+  height: 100vh;
+  .title-container {
+    h1 {
+      padding: 10vh 0 5vh;
+      height: 30vh;
+    }
+    img {
+      height: 15vh;
+      margin: 0 auto 8vh;
+    }
+    h3 {
+      height: 10vh;
+    }
+  }
 }

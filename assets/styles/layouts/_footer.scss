@@ -5,6 +5,9 @@ footer {
   background: $color1;
   color: $color2;
   box-shadow: 3px -3px 14px 0px rgba(0, 0, 0, 0.74);
+  @media screen and (max-width: 620px) {
+    height: 450px;
+  }
   .section-container {
     width: 100%;
     max-width: 1240px;
@@ -12,6 +15,9 @@ footer {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 620px) {
+      display: block;
+    }
     .fcontent {
       padding-left: 20px;
       width: 300px;
@@ -23,12 +29,19 @@ footer {
       p {
         color: $color2;
       }
+      @media screen and (max-width: 620px) {
+        margin: 0 auto;
+        padding: 20px;
+      }
     }
     .logo {
       height: 150px;
       width: 300px;
       img {
         height: 100%;
+      }
+      @media screen and (max-width: 620px) {
+        margin: 0 auto;
       }
     }
   }

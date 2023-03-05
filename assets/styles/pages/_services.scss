@@ -23,6 +23,9 @@
       // background: $color9;
       margin: 0px 100px 75px;
       text-align: left;
+      @media screen and (max-width: 600px) {
+        margin: 0px 0px 75px;
+      }
       p {
         color: $color4;
         text-align: justify;
@@ -76,7 +79,7 @@
             }
           }
           #mesh-install-p {
-            background: url("./../img/roof-std.jpg") center/cover;
+            background: url("./../img/IMG_2732.JPG") center/cover;
           }
           #gutter-cleaning-p {
             background: url("./../img/roof-std.jpg") center/cover;

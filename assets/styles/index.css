@@ -192,6 +192,16 @@ sl-button {
   max-width: 1920px;
   padding: 50px 100px;
 }
+@media screen and (max-width: 925px) {
+  .section-container {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section-container {
+    padding: 50px 0px;
+  }
+}
 
 .section-bg {
   position: absolute;
@@ -203,14 +213,14 @@ sl-button {
 }
 
 .bghead {
-  background: url(./../img/bg-1.jpeg) top/cover;
+  background: url(./../img/bg01.png) center/cover;
   opacity: 1;
   filter: brightness(50%);
   height: 70vh;
 }
 
 #bghome {
-  height: 100vh;
+  height: 100%;
 }
 
 .bglight {
@@ -219,23 +229,46 @@ sl-button {
 }
 
 .bgins {
-  background: url(./../img/bg-2.jpeg) center/cover fixed;
+  background: url(./../img/IMG_2717.JPG) center/cover fixed;
   opacity: 0.5;
   transition: all 0.4s ease-in-out;
 }
 
 .bgcont {
-  background: url(./../img/roof-std.jpg) center/cover fixed;
+  background: url(./../img/IMG_2707.JPG) center/cover fixed;
   filter: brightness(30%);
 }
 
 .bi {
   display: flex;
 }
+@media screen and (max-width: 925px) {
+  .bi {
+    display: block;
+  }
+}
 
 .left1,
 .right1 {
   width: 50%;
+}
+@media screen and (max-width: 925px) {
+  .left1,
+  .right1 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .odd {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .even {
+    flex-direction: column-reverse;
+  }
 }
 
 .inspection {
@@ -245,6 +278,11 @@ sl-button {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .inspection .section-container {
+    padding: 50px 5px;
+  }
 }
 .inspection a,
 .inspection a:visited {
@@ -288,6 +326,13 @@ sl-button {
   .inspection a:visited {
     font-size: 1.2rem;
     letter-spacing: 2px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .inspection a,
+  .inspection a:visited {
+    width: 100%;
+    min-width: 200px;
   }
 }
 @media screen and (max-width: 420px) {
@@ -584,7 +629,18 @@ header .title-container a i {
 }
 
 #headerMain {
-  min-height: 100vh;
+  height: 100vh;
+}
+#headerMain .title-container h1 {
+  padding: 10vh 0 5vh;
+  height: 30vh;
+}
+#headerMain .title-container img {
+  height: 15vh;
+  margin: 0 auto 8vh;
+}
+#headerMain .title-container h3 {
+  height: 10vh;
 }
 
 footer {
@@ -598,6 +654,11 @@ footer {
   color: rgb(201, 239, 199);
   box-shadow: 3px -3px 14px 0px rgba(0, 0, 0, 0.74);
 }
+@media screen and (max-width: 620px) {
+  footer {
+    height: 450px;
+  }
+}
 footer .section-container {
   width: 100%;
   max-width: 1240px;
@@ -605,6 +666,11 @@ footer .section-container {
   align-items: center;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 620px) {
+  footer .section-container {
+    display: block;
+  }
 }
 footer .section-container .fcontent {
   padding-left: 20px;
@@ -618,12 +684,23 @@ footer .section-container .fcontent span {
 footer .section-container .fcontent p {
   color: rgb(201, 239, 199);
 }
+@media screen and (max-width: 620px) {
+  footer .section-container .fcontent {
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
 footer .section-container .logo {
   height: 150px;
   width: 300px;
 }
 footer .section-container .logo img {
   height: 100%;
+}
+@media screen and (max-width: 620px) {
+  footer .section-container .logo {
+    margin: 0 auto;
+  }
 }
 
 .about {
@@ -641,9 +718,16 @@ footer .section-container .logo img {
   grid-template-areas: "l r" "rm rm";
   gap: 25px;
 }
+@media screen and (max-width: 925px) {
+  .about .section-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 300px 100px;
+    grid-template-areas: "r" "l" "rm";
+  }
+}
 .about .left {
   grid-area: l;
-  background: url("./../img/roof-std.jpg") center/cover;
+  background: url("./../img//IMG_2693.JPG") center/cover;
 }
 .about .right {
   grid-area: r;
@@ -668,7 +752,7 @@ footer .section-container .logo img {
   gap: 25px;
 }
 .services .left1 {
-  background: url("./../img/roof-std.jpg") center/cover;
+  background: url("./../img/IMG_2731.JPG") center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -686,6 +770,12 @@ footer .section-container .logo img {
   display: flex;
   padding: 5px 0;
   align-items: center;
+}
+@media screen and (max-width: 450px) {
+  .services .right1 .grid-content {
+    padding: 5px;
+    gap: 10px;
+  }
 }
 .services .right1 .grid-content .icon-gutter {
   background: url("./../img/gutter-protection-sketch-1.png") center/cover;
@@ -725,10 +815,21 @@ footer .section-container .logo img {
   background: rgb(82, 130, 101);
   width: 350px;
 }
+@media screen and (max-width: 450px) {
+  .contact .bt {
+    width: 250px;
+  }
+}
 .contact .bt a,
 .contact .bt i {
   font-weight: 800;
   color: rgb(201, 239, 199);
+}
+@media screen and (max-width: 450px) {
+  .contact .bt a,
+  .contact .bt i {
+    font-size: smaller;
+  }
 }
 
 .history {
@@ -777,7 +878,7 @@ footer .section-container .logo img {
 }
 
 #bg3 {
-  background: url(./../img/roof-std.jpg) center/cover fixed;
+  background: url(./../img/bg02.png) center/cover fixed;
   height: 400px;
 }
 
@@ -787,9 +888,18 @@ footer .section-container .logo img {
   z-index: -1;
 }
 
+.banner .bi {
+  display: flex;
+}
 .banner .section-container {
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 50px;
+}
+@media screen and (max-width: 650px) {
+  .banner .section-container {
+    justify-content: center;
+  }
 }
 .banner .section-container .card-overview {
   max-width: 200px;
@@ -818,10 +928,20 @@ footer .section-container .logo img {
   z-index: 3;
   display: block;
 }
+@media screen and (max-width: 925px) {
+  .values .section-container {
+    margin: 100px 0;
+  }
+}
 .values .section-container .value {
   display: flex;
   justify-content: space-between;
   padding: 50px;
+}
+@media screen and (max-width: 600px) {
+  .values .section-container .value {
+    padding: 50px 0;
+  }
 }
 .values .section-container .value .left,
 .values .section-container .value .right2 {
@@ -831,26 +951,43 @@ footer .section-container .logo img {
   text-align: center;
   width: 30%;
 }
+@media screen and (max-width: 925px) {
+  .values .section-container .value .left,
+  .values .section-container .value .right2 {
+    width: 100%;
+  }
+}
 .values .section-container .value .left h4,
 .values .section-container .value .right2 h4 {
   color: rgb(82, 130, 101);
   text-transform: uppercase;
   padding: 50px;
-  font-size: 2.5rem;
   font-weight: 600;
   letter-spacing: 2px;
 }
 .values .section-container .value .left #rat-07,
 .values .section-container .value .right2 #rat-07 {
-  background: url(./../img/roof-std.jpg) center/cover;
+  background: url(./../img/IMG_2723.JPG) center/cover;
   height: 300px;
-  width: 250px;
+  width: 300px;
+}
+@media screen and (max-width: 925px) {
+  .values .section-container .value .left #rat-07,
+  .values .section-container .value .right2 #rat-07 {
+    width: 100%;
+  }
 }
 .values .section-container .value .left #rat-06,
 .values .section-container .value .right2 #rat-06 {
-  background: url(./../img/roof-std.jpg) center/cover;
+  background: url(./../img/IMG_2716.JPG) center/cover;
   height: 300px;
-  width: 250px;
+  width: 300px;
+}
+@media screen and (max-width: 925px) {
+  .values .section-container .value .left #rat-06,
+  .values .section-container .value .right2 #rat-06 {
+    width: 450px;
+  }
 }
 .values .section-container .value .right,
 .values .section-container .value .left2 {
@@ -859,6 +996,12 @@ footer .section-container .logo img {
   align-items: center;
   text-align: center;
   width: 50%;
+}
+@media screen and (max-width: 925px) {
+  .values .section-container .value .right,
+  .values .section-container .value .left2 {
+    width: 100%;
+  }
 }
 .values .section-container .value .right .container,
 .values .section-container .value .left2 .container {
@@ -887,6 +1030,11 @@ footer .section-container .logo img {
 .values .section-container .value .value-desc p {
   width: 80%;
   text-align: left;
+}
+@media screen and (max-width: 925px) {
+  .values .section-container .value .value-desc p {
+    text-align: justify;
+  }
 }
 
 .form {
@@ -1063,8 +1211,8 @@ footer .section-container .logo img {
 }
 .form .section-container .contact-dets .contact-img {
   margin: 25px 0 25px 25px;
-  background: url(./../img/roof-std.jpg) center/cover;
-  height: 250px;
+  background: url(./../img/IMG_2684.JPG) center/cover;
+  height: 400px;
   width: 100%;
 }
 
@@ -1091,6 +1239,11 @@ footer .section-container .logo img {
   text-align: center;
   margin: 0px 100px 75px;
   text-align: left;
+}
+@media screen and (max-width: 600px) {
+  .services .section-container .prompt {
+    margin: 0px 0px 75px;
+  }
 }
 .services .section-container .prompt p {
   color: rgb(26, 26, 26);
@@ -1150,7 +1303,7 @@ footer .section-container .logo img {
 }
 .services .section-container .signature-services .sig-serv .left #mesh-install-p,
 .services .section-container .signature-services .sig-serv .right3 #mesh-install-p {
-  background: url("./../img/roof-std.jpg") center/cover;
+  background: url("./../img/IMG_2732.JPG") center/cover;
 }
 .services .section-container .signature-services .sig-serv .left #gutter-cleaning-p,
 .services .section-container .signature-services .sig-serv .right3 #gutter-cleaning-p {
@@ -1216,6 +1369,21 @@ footer .section-container .logo img {
 .products-t .card-container .card-overview::part(body) {
   height: 200px;
 }
+.products-t .card-container .card-overview::part(image) {
+  height: 250px;
+  width: 200px;
+  margin: 0 auto;
+}
+.products-t .card-container #mesh-c::part(image) {
+  height: 250px;
+  width: 300px;
+  margin: 0 auto;
+}
+.products-t .card-container #poly-c::part(image) {
+  height: 250px;
+  width: 300px;
+  margin: 0 auto;
+}
 .products-t .card-container .card-overview [slot=footer] {
   display: flex;
   justify-content: space-between;
@@ -1241,6 +1409,12 @@ footer .section-container .logo img {
   margin-bottom: 30px;
   min-height: 500px;
 }
+@media screen and (max-width: 925px) {
+  .product-container {
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+}
 .product-container .product-image {
   background: url("./../img/roof-std.jpg") center/cover;
   border-radius: 25px;
@@ -1251,9 +1425,26 @@ footer .section-container .logo img {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 925px) {
+  .product-container .product-image {
+    width: 100%;
+  }
+}
+.product-container #product-alu {
+  background: url("./../img/poly-big.png") center/cover;
+}
+.product-container #product-other {
+  background: url("./../img/IMG_2670.JPG") center/cover;
+}
 .product-container .product-details {
   max-width: 50%;
   width: 50%;
+}
+@media screen and (max-width: 925px) {
+  .product-container .product-details {
+    max-width: none;
+    width: 100%;
+  }
 }
 .product-container .product-details .product-title {
   margin-bottom: 50px;

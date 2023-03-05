@@ -10,10 +10,18 @@
       "l r"
       "rm rm";
     gap: 25px;
+    @media screen and (max-width: 925px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 400px 300px 100px;
+      grid-template-areas:
+        "r"
+        "l"
+        "rm";
+    }
   }
   .left {
     grid-area: l;
-    background: url("./../img/roof-std.jpg") center/cover;
+    background: url("./../img//IMG_2693.JPG") center/cover;
   }
   .right {
     grid-area: r;
@@ -38,7 +46,7 @@
     gap: 25px;
   }
   .left1 {
-    background: url("./../img/roof-std.jpg") center/cover;
+    background: url("./../img/IMG_2731.JPG") center/cover;
     @include center-unique-child();
     p {
       text-align: justify;
@@ -54,6 +62,10 @@
       display: flex;
       padding: 5px 0;
       align-items: center;
+      @media screen and (max-width: 450px) {
+        padding: 5px;
+        gap: 10px;
+      }
       .icon-gutter {
         background: url("./../img/gutter-protection-sketch-1.png") center/cover;
         width: 40px;
@@ -93,10 +105,16 @@
     border-radius: 20px;
     background: $color1;
     width: 350px;
+    @media screen and (max-width: 450px) {
+      width: 250px;
+    }
     a,
     i {
       font-weight: 800;
       color: $color2;
+      @media screen and (max-width: 450px) {
+        font-size: smaller;
+      }
     }
   }
 }

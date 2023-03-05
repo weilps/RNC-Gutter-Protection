@@ -171,6 +171,12 @@ sl-button {
   width: 100%;
   max-width: 1920px;
   padding: 50px 100px;
+  @media screen and (max-width: 925px) {
+    padding: 50px;
+  }
+  @media screen and (max-width: 450px) {
+    padding: 50px 0px;
+  }
 }
 
 // BACKGROUND ********************
@@ -185,14 +191,14 @@ sl-button {
 }
 
 .bghead {
-  background: url(./../img/bg-1.jpeg) top/cover;
+  background: url(./../img/bg01.png) center/cover;
   opacity: 1;
   filter: brightness(50%);
   height: 70vh;
 }
 
 #bghome {
-  height: 100vh;
+  height: 100%;
 }
 
 .bglight {
@@ -201,13 +207,13 @@ sl-button {
 }
 
 .bgins {
-  background: url(./../img/bg-2.jpeg) center/cover fixed;
+  background: url(./../img/IMG_2717.JPG) center/cover fixed;
   opacity: 0.5;
   transition: all 0.4s ease-in-out;
 }
 
 .bgcont {
-  background: url(./../img/roof-std.jpg) center/cover fixed;
+  background: url(./../img/IMG_2707.JPG) center/cover fixed;
   filter: brightness(30%);
 }
 
@@ -215,14 +221,36 @@ sl-button {
 
 .bi {
   display: flex;
+  @media screen and (max-width: 925px) {
+    display: block;
+  }
 }
 
 .left1,
 .right1 {
   width: 50%;
+  @media screen and (max-width: 925px) {
+    width: 100%;
+  }
+}
+
+.odd {
+  @media screen and (max-width: 925px) {
+    flex-direction: column;
+  }
+}
+.even {
+  @media screen and (max-width: 925px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .inspection {
+  .section-container {
+    @media screen and (max-width: 500px) {
+      padding: 50px 5px;
+    }
+  }
   position: relative;
   height: 300px;
   @include center-unique-child();
@@ -262,6 +290,10 @@ sl-button {
     @media screen and (max-width: 925px) {
       font-size: 1.2rem;
       letter-spacing: 2px;
+    }
+    @media screen and (max-width: 500px) {
+      width: 100%;
+      min-width: 200px;
     }
     @media screen and (max-width: 420px) {
       font-size: 1.1rem;
